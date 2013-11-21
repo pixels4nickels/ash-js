@@ -2,14 +2,6 @@
  * Ash-js Component matching family
  *
  */
-define([
-    'ash-core/family',
-    'ash-core/nodepool',
-    'ash-core/nodelist',
-    'brejep/dictionary'
-], function (Family, NodePool, NodeList, Dictionary) {
-    'use strict';
-
     var ComponentMatchingFamily = Family.extend({
         constructor: function (nodeClass, engine) {
             this.nodeClass = nodeClass;
@@ -116,5 +108,5 @@ define([
         }
     });
 
-    return ComponentMatchingFamily;
-});
+    module.exports = ComponentMatchingFamily;
+
